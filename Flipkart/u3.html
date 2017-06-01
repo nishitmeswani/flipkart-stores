@@ -1,0 +1,179 @@
+
+<!doctype html>
+<html ⚡>
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+  <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+
+  <link rel="canonical" href="https://ampbyexample.com/components/amp-sidebar/">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <style amp-custom>
+
+    .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    align-items: right;
+}
+
+    p{
+        color: white;
+      }
+      footer{
+        background-color: black;
+      }
+      .menu{
+    width: 25px;
+    height: 4px;
+    background-color: black;
+    margin: 3px 0;
+      }
+      body{background-color:#f1f1f1;font-family:Arial;word-wrap:break-word;}
+      .cf {clear: both;}
+      .cf:before, .cf:after {content: " ";display: table;}
+      .cf:after {clear: both;}
+      .fl{float:left;}
+      .fr{float:right;}
+      .w50{width:50%;}
+      .f12{font-size: 12px;}
+      .scolor{color:#999;}
+      .pcolor{color:#37A6E1;}
+      .gcolor{color:#57BB63;}
+      .wbg{background-color: #FFF;}
+      .calign{text-align: center;}
+      .ralign{text-align: right;}
+      .ptb5{padding: 5px 0;}
+      .m5{margin:5px;}
+      .p5{padding: 5px;}
+      .p10{padding: 10px;}
+      .mt{margin-top:10px;}
+      .pb5{margin-bottom: 5px;}
+      .dblock{display: block;}
+      .headerwrap {border-bottom: 3px solid #d54150;}
+      .shadow{-moz-box-shadow:0 2px 3px rgba(0,0,0,.05);-webkit-box-shadow:0 2px 3px rgba(0,0,0,.05);box-shadow:0 2px 3px rgba(0,0,0,.05);}
+      h1 {color:#333; font-size:18px; margin: 5px 0 5px;}
+      h2 {color:#222; font-size:16px; margin:0;}
+      a{text-decoration: none; color: blue;}
+      .dctitle{font-size:16px;font-weight:bold;color:#6a6a6a; padding:10px 0 5px;line-height:20px;}
+      .dcaction{font-size:14px;font-weight:bold;border-bottom: 2px solid #57BB63;padding-bottom:2px;}
+      .vtitle{color:#6a6a6a;font-weight:600;}
+      .cp{color:#37A6E1;font-weight:bold;}
+      .mlogo{width:100px;height:50px;}
+      .lt{text-decoration:line-through;}
+      .fblock{color:#fff;background-color:#333;padding:10px 0;}
+      .lh{line-height:16px;}
+      .socialico amp-social-share{margin-top: 20px;}
+      .dlogo{width:180px;height:50px;display:block;margin:0 auto;}
+      .overview{border-bottom: 1px solid #CCC;padding: 10px;font-size:16px;}
+      .store-content{height: 300px;overflow-y: scroll;}
+      .store-content ul{padding-left:30px}
+      .store-content ul, .store-content p{;color:#6a6a6a;margin:10px 0;font-size:14px;}
+      .store-content p, .store-content li {line-height:20px;}
+      .store-content a {color:#2a93db;}
+
+
+    amp-sidebar {
+      width: 250px;
+      padding-right: 10px;
+    }
+    .amp-sidebar-image {
+      line-height: 100px;
+      vertical-align:middle;
+    }
+    .amp-close-image {
+       top: 15px;
+       left: 225px;
+       cursor: pointer;
+    }
+    li {
+      margin-bottom: 20px;
+      list-style: none;
+    }
+  </style>
+</head>
+<body>
+
+    <amp-sidebar id="sidebar" layout="nodisplay" side="left">
+
+      <ul>
+        <li><a href="https://www.desidime.com/">Deals</a></li>
+        <li><a href="https://www.desidime.com/coupons">Coupons</a></li>
+        <li><a href="https://www.desidime.com/price-compare">Price Comparison</a></li>
+        <li><a href="https://www.desidime.com/stores">Stores</a></li>
+        <li><a href="https://www.desidime.com/forums">Forums</a></li>
+        <li><a href="https://www.desidime.com/categories">Categories</a></li>
+        <li><a href="https://www.desidime.com/gift_shop">Gift Stores</a></li>
+        <li><a href="https://www.desidime.com/channels">Channels</a></li>
+        <li><a href="/">Deal Baba</a></li>
+      </ul>
+    </amp-sidebar>
+
+
+
+
+
+<a href="https://www.desidime.com/"><h1 align="center">DesiDime</h1></a>
+<amp-img src="Home.png" alt="Welcome" height="75" width="1600"></amp-img>
+
+
+
+ <button on="tap:sidebar.toggle" class="ampstart-btn caps m2">
+  <div class="menu"></div>
+  <div class="menu"></div>
+  <div class="menu"></div>
+
+ </button>
+ <br>
+ <br>
+
+ <a href="https://www.desidime.com/amp/stores/flipkart">Flipkart Coupons and Offers</a>
+ <br>
+
+ <amp-img src="flipkart.jpg" alt="Flipkart Logo" height="80" width="120"></amp-img>
+
+ <div class="fr socialico">
+        <amp-social-share type="facebook" width="26" height="26" data-param-app_id="<%= AppConfig.facebook_id %>"></amp-social-share>
+        <amp-social-share type="gplus" width="26" height="26"></amp-social-share>
+        <amp-social-share type="twitter" width="26" height="26"></amp-social-share>
+        <amp-social-share type="whatsapp" width="26" height="26"></amp-social-share>
+      </div>
+<h2>80,Flipkart Offers and Promo Codes,May 2017</h2>
+
+<h2>Coupon 1</h2>
+<amp-img src="image1.png" alt="Welcome" height="100" width="1600"></amp-img>
+<p align="right">
+<button class="button">Get Offer</button>
+</p>
+<h2>Coupon 2</h2>
+<amp-img src="image1.png" alt="Welcome" height="100" width="1600"></amp-img>
+<p align="right">
+<button class="button">Get Offer</button>
+<h2>Coupon 3</h2>
+<amp-img src="image1.png" alt="Welcome" height="100" width="1600"></amp-img>
+<p align="right">
+<button class="button">Get Offer</button>
+</p>
+
+
+
+
+
+
+</body>
+<footer>
+  <p align="center"> © 2010-2017. Parity Cube Pvt Ltd</p>
+</footer>
+</html>
